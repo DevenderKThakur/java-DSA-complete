@@ -18,6 +18,12 @@ public class index1 {
     
 // Question to solve 
 //  Write a program to print whether a number is even or odd, also take input from the user.
+    int check = sc.nextInt();
+    if(check%2==0){
+      System.out.println("Even"); 
+    }else{
+      System.out.println("Odd"); 
+    }
 // Take name as input and print a greeting message for that particular name.
 // Write a program to input principal, time, and rate (P, T, R) from the user and find Simple Interest.
 // Take in two numbers and an operator (+, -, *, /) and calculate the value. (Use if conditions)
