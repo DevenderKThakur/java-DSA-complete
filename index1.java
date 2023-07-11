@@ -12,7 +12,8 @@ public class index1 {
     // long largeIntValue = 123445L;
     // bool yet = true;
     
-// Question to solve 
+// Question to solve
+
 //  Write a program to print whether a number is even or odd, also take input from the user.
     int check = sc.nextInt();
     if(check%2==0){
@@ -20,15 +21,23 @@ public class index1 {
     }else{
       System.out.println("Odd"); 
     }
+    
 // Take name as input and print a greeting message for that particular name.
     String name = sc.next();
     System.out.println("Good Morning"+name); 
+    
 // Write a program to input principal, time, and rate (P, T, R) from the user and find Simple Interest.
     float pr = nextFloat();
     float rate = nextFloat();
     float time = nextFloat();
     System.out.println((pr*rate*time)/100); 
+
+    
 // Take in two numbers and an operator (+, -, *, /) and calculate the value. (Use if conditions)
+      int n1 = sc.nextInt();
+      int n2 = sc.nextInt();
+      char opt = sc.next();
+    
 // Take 2 numbers as input and print the largest number.
     int a = sc.nextInt();
     int b = sc.nextInt();
@@ -37,6 +46,7 @@ public class index1 {
     }else{
        System.out.println(b); 
     }
+
 // To reverse a string 
     String input = sc.next();
     String rev = "";
@@ -44,7 +54,9 @@ public class index1 {
       rev = rev+input.charAt(i);
     }
     System.out.println(rev); 
+    
 // To calculate Fibonacci Series up to n numbers.
+    
 // To find out whether the given String is Palindrome or not.
     String input2 = sc.next();
     String rev2 = "";
@@ -56,6 +68,7 @@ public class index1 {
     }else{
       System.out.println("not a palindrome ");
     }
+    
 // To find Armstrong Number between two given number.
   }
 }
