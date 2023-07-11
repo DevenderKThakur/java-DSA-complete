@@ -1,12 +1,8 @@
 import java.util.Scanner;
 
 public class index1 {
-  public static void main(String[] args) {
-    System.out.println("Namstey Duniya ");  // print the output in java
-    
+  public static void main(String[] args) {    
     Scanner sc = new Scanner (System.in);
-     System.out.println(sc.nextLine());    // to take string input 
-
     // primitive data type are which cannot be broken to more simple data 
     // e.g :-
     // int a = 4 ;
@@ -25,7 +21,13 @@ public class index1 {
       System.out.println("Odd"); 
     }
 // Take name as input and print a greeting message for that particular name.
+    String name = sc.next();
+    System.out.println("Good Morning"+name); 
 // Write a program to input principal, time, and rate (P, T, R) from the user and find Simple Interest.
+    float pr = nextFloat();
+    float rate = nextFloat();
+    float time = nextFloat();
+    System.out.println((pr*rate*time)/100); 
 // Take in two numbers and an operator (+, -, *, /) and calculate the value. (Use if conditions)
 // Take 2 numbers as input and print the largest number.
     int a = sc.nextInt();
