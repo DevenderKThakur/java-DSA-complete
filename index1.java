@@ -22,9 +22,32 @@ public class index1 {
 // Write a program to input principal, time, and rate (P, T, R) from the user and find Simple Interest.
 // Take in two numbers and an operator (+, -, *, /) and calculate the value. (Use if conditions)
 // Take 2 numbers as input and print the largest number.
-// Input currency in rupees and output in USD.
+    int a = sc.nextInt();
+    int b = sc.nextInt();
+    if(a>b){
+      System.out.println(a); 
+    }else{
+       System.out.println(b); 
+    }
+// To reverse a string 
+    String input = sc.next();
+    String rev = "";
+    for(int i = input.length()-1;i>=0;i--){
+      rev = rev+input.charAt(i);
+    }
+    System.out.println(rev); 
 // To calculate Fibonacci Series up to n numbers.
 // To find out whether the given String is Palindrome or not.
+    String input2 = sc.next();
+    String rev2 = "";
+    for(int i = input2.length()-1 ;i>=0;i--){
+      rev2 = rev2+input2.charAt(i);
+    }
+    if(input2.equals(rev2)){
+      System.out.println("palindrome");
+    }else{
+      System.out.println("not a palindrome ");
+    }
 // To find Armstrong Number between two given number.
   }
 }
