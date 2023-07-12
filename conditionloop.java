@@ -20,5 +20,14 @@ class conditionloop {
       num2= num2/10;
     }
     System.out.println(rev);
+    
+    // fibonacci series 
+    int a = 0 , int b = ;
+    for(int i = 1;i<=10;i++){
+      c = a + b;
+      System.out.println(c);
+      a = b;
+      b = c ;
+    }
   }
 }
