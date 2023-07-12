@@ -10,4 +10,15 @@ class conditionloop {
       f=f*i;
     }
     System.out.println(f);
+
+    // reverse a number 
+    int rem , rev =0;
+    int num2 = sc.nextInt();
+    while(num2!=0){
+      rem = num2%10;
+      rev = rev*10+rem;
+      num2= num2/10;
+    }
+    System.out.println(rev);
+  }
 }
