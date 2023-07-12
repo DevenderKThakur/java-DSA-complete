@@ -29,5 +29,19 @@ class conditionloop {
       a = b;
       b = c ;
     }
+    // to check weather the number is palindrome or not 
+    int rem2 , rev2 =0;
+    int num3 = sc.nextInt();
+    int temp = num2 ;
+    while(temp!=0){
+      rem = temp%10;
+      rev = rev*10+rem;
+      temp= temp/10;
+    }
+    if(num3 == rev2){
+      System.out.println("palindrome");
+    }else{
+        System.out.println("not a palindrome");
+    }
   }
 }
