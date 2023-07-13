@@ -15,6 +15,17 @@ public class method{
 
         // int n = sc.nextInt();
         // oddEven(n);
+
+        // int a = sc.nextInt();
+        // int b = sc.nextInt();
+        // System.out.println(product(a , b));
+
+       //  int n  = sc.nextInt();
+       // if( palin(n) == true){
+       //   System.out.println("yes");
+       // }else{
+       //  System.out.println("no");
+       // }
     }
     public static int largest (int a , int b , int c ){
         int max = a;
@@ -43,6 +54,21 @@ public class method{
         }else{
             System.out.println("odd");
         }
+           
+        //to find the product of two number 
+              static int product(int a , int b ){
+               return a * b;
+              } 
+        //  to check weather palindrome or not 
+        public static boolean palin(int n ){
+        int t = n ;
+        int rev = 0;
+        while(t!=0){
+            rev = (rev*10)+(t%10);
+            t=t/10;
+        }
+        return (rev == n);
     }
+ }
    
 }
