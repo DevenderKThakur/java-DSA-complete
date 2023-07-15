@@ -13,6 +13,10 @@ public class arrayQuestion{
 
         // int[] nums = {1,2,1};                              //leetcode 1929
         // System.out.println(concatenation(nums));
+
+        // int [] nums = {2,7,11,15};
+        // int target = 9;
+        // twoSum(nums,9);
   }
    static void swap(int[] arr , int i , int j ){   // swap the value in array method 
         int t = arr[i];
@@ -52,5 +56,16 @@ public class arrayQuestion{
             ans[i+n] = nums[i];
         }
         return Arrays.toString(ans);
+    }
+  // two sum problem 
+    static void  twoSum(int [] nums , int target){
+        int n = nums.length;
+        for(int i=0;i<n;i++){
+           for(int j=i+1;j<n;j++){
+              if(target == nums[i]+nums[j]){ 
+                System.out.println(i+","+j);
+              }
+           }
+        }
     }
 }
