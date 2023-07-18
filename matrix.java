@@ -19,7 +19,7 @@ public class matrix {
         int[][] m3 = new int[3][3];
           for(int i=0;i<3;i++){
             for(int j=0;j<3;j++){
-                m3[i][j] = m1[i][j] + m2[i][j];
+                m3[i][j] = m1[i][j] + m2[i][j];   // for - ,* , / 
             }
         }
 
