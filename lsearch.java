@@ -3,6 +3,9 @@ public class lsearch {
         int[] arr = {18,12,9,14,77,50};
         int target = 5;
         System.out.println(linearSearch(arr, target));
+        String name = "Devender";
+        char target = 'D';
+        System.out.println(search(name, target));
     }
     static int linearSearch(int[] arr, int target){
         if(arr.length == 0){
@@ -14,5 +17,17 @@ public class lsearch {
             }
         }
         return -1;
+    }
+    // search in a string 
+    static boolean search(String name , char target){
+        if(name.length() == 0){
+            return false ;
+        }
+        for(int i=0;i<name.length();i++){
+            if(target == name.charAt(i)){
+                return true ;
+            }
+        }
+        return false ;
     }
 }
