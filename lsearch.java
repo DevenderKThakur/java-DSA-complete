@@ -1,3 +1,4 @@
+import java.util.Arrays;
 public class lsearch {
     public static void main(String[] args) {
         // int[] arr = {18,12,9,14,77,50};
@@ -6,8 +7,17 @@ public class lsearch {
         // String name = "Devender";
         // char target = 'D';
         // System.out.println(search(name, target));
-        int[] nums = {18,12,9,14,77,50};
-        System.out.println(min(nums));
+        // int[] nums = {18,12,9,14,77,50};
+        // System.out.println(min(nums));
+        int[][] arr = {
+            {23,4,1},
+            {18,12,3,9},
+            {78,99,34,56},
+            {18,12}
+        };
+        int target = 34;
+        int[] ans = search2(arr, target);
+        System.out.println(Arrays.toString(ans));
     }
     static int linearSearch(int[] arr, int target){
         if(arr.length == 0){
@@ -40,5 +50,15 @@ public class lsearch {
             }
         }
         return min;
+    }
+     static int[] search2(int[][] arr , int target ){
+        for(int i = 0 ;i<arr.length;i++){
+            for(int j =0;j<arr[i].length;j++){
+                if(arr[i][j] == target){
+                    return new int[]{i,j};
+                }
+            }
+        }
+        return new int[]{-1,-1};
     }
 }
