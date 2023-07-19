@@ -9,6 +9,7 @@ public class lsearch {
         // System.out.println(search(name, target));
         // int[] nums = {18,12,9,14,77,50};
         // System.out.println(min(nums));
+        // search in a 2d array 
         int[][] arr = {
             {23,4,1},
             {18,12,3,9},
