@@ -31,4 +31,16 @@ public class matrix {
             System.out.println();
         }
     }
+     static int diagonalSun(int[][]mat){
+          int n = mat.length;
+          int sum = 0;
+          for(int i=0;i<n;i++){
+             sum +=mat[i][i];
+             sum +=mat[n-i-1][i];
+          }
+          if(n%2!=0){
+            return sum - mat[1][1];
+          }
+          return sum ;
+    }
 }
