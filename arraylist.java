@@ -14,5 +14,9 @@ public class arraylist {
         for(int i:mynum){
             System.out.println(i);
         }
+        for(int i=0;i<3;i++){
+        list.add(scanner.next());
+         }
+         System.out.println(list);
     }
 }
