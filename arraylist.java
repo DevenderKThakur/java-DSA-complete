@@ -18,5 +18,18 @@ public class arraylist {
         list.add(scanner.next());
          }
          System.out.println(list);
+    // to find max value in the arraylist 
+    ArrayList<Integer> mynum = new ArrayList<Integer>();
+    for(int i=0;i<5;i++){
+        mynum.add(scanner.nextInt());
+    }
+    int max = mynum.get(0);
+    for(int i=0;i<5;i++){
+        if(max < mynum.get(i)){
+            max = mynum.get(i);
+        }
+    }
+    System.out.println(max);
+    
     }
 }
