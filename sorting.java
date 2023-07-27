@@ -6,6 +6,7 @@ public class sorting {
         bubbleSort(arr);
         System.out.println(Arrays.toString(arr));
     }
+    // time complexity 0(n^2)  worst case 
     static void  bubbleSort(int [] arr){
         for(int i=0;i<arr.length-1;i++){
             for(int j=0;j<arr.length-i-1;j++){
