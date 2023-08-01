@@ -9,6 +9,7 @@ public class sortsearch {
         int index = binarySearch(arr, target);
         System.out.println(index);
     }
+    // the sorting algorithm has time complexity of O(n^2)
     static void selectionSort(int [] arr ){
         for(int i=0;i<arr.length;i++){
             int low = i ;
@@ -22,6 +23,7 @@ public class sortsearch {
             arr[i] = t ;
         }
     }
+    // time complexity of search is O(logn)
     static int binarySearch(int[] arr, int target){
           int start = 0;
           int end = arr.length;
@@ -39,4 +41,5 @@ public class sortsearch {
           }
           return - 1 ;
     }
+    // total comlexity is N^2 + logN
 }
