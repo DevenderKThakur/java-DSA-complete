@@ -18,7 +18,7 @@ public class sorting {
             }
         }
     }
-    // time complexity o(n^2)
+    // time complexity o(n^2)  it is when the array is  1 to N 
         static void selectionSort(int [] arr){
         for(int i=0;i<arr.length;i++){
             int low = i ;
