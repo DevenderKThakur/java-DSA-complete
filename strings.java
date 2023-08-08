@@ -33,5 +33,34 @@ public class strings {
         String str = "123";   
         int number  = Integer.parseInt(str);  // to convert number into string Integer.toString(number)
         System.out.println(number);
+
+         int size = 4;
+        String[] name = new String[size];
+        int lenghtval = 0;
+        for(int i=0;i<size;i++){
+            name[i] = sc.next();
+            lenghtval += name[i].length();
+        }
+        System.out.println(lenghtval);
+
+        String orignal = sc.next();
+        String result = "";
+        for(int i=0;i<orignal.length();i++){
+            if(orignal.charAt(i) == 'e'){
+               result += "i";
+            }else{
+                result +=orignal.charAt(i);
+            }
+        }
+       System.out.println(result);
+        
+        String email = sc.next();
+        String result2 = "";
+        for(int i=0;i<email.length();i++){
+            if(email.charAt(i) == '@'){
+                 result2 =  email.substring(0, i);
+            }
+        }
+        System.err.println(result2);
     }
 }
